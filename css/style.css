@@ -102,11 +102,13 @@ form button{
     padding-bottom: .75rem;
 }
 #category-results{
-    display: block;
+    display: none;
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
     margin-left: -1.5rem;
     text-align: left;
+    width: 90%;
+    margin: 40px auto -10px;
 }
 #category-results span{
     font-size: 1.25rem;
@@ -142,8 +144,10 @@ form button{
 }
 
 @media screen and (min-width: 1000px){
-    #results{
+    #results,
+    #category-results{
         max-width: 800px;
     }
 }
+
 
