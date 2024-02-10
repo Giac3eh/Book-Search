@@ -20,7 +20,7 @@ async function searchBooks() {
     resultsContainer.innerHTML = '';
 
     categoryResults.innerHTML = `Results for "<span>${searchInput}</span>":`;
-    categoryResults.style.display = "none";
+    categoryResults.style.display = "block";
     
     try {
         loader.style.display = 'block'; 
@@ -109,4 +109,3 @@ async function showDescription(work, descriptionDiv) {
         throw new Error('Error fetching detailed description.');
     }
 }
-
