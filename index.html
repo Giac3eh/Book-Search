@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container">
 <h1>Book Search Engine</h1>
-<form id="search-form">
-    <input type="text" id="search-box" placeholder="Search any category here...">
-    <button>Search</button>
-</form>
-<div id="search-result">
-    <h2 id="category-results"></h2>
-    <span id="result-placeholder">No Results - Search a category</span>
-    <ol id="results-list"> </ol>
+    <form id="search-form">
+        <input type="text" id="searchInput" placeholder="Search any category here...">
+        <button type="submit">Search</button>
+    </form>
+    <div id="results">
+        <h2 id="category-results"></h2>
+        <span id="result-placeholder">No Results - Search a category</span>
+    </div>
+    <div id="loader" class="loader"></div>
 </div>
 <script src="js/script.js"></script>
 </body>
